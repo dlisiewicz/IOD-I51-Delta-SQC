@@ -7,21 +7,21 @@ Notacja scenariuszy do wrzucenia do Readme.md projektu:
 • Kroki mogą zawierać pod-scenariusze (dowolny poziom zagłębień)
 • Kroki mogą się zaczynać od słów kluczowych: IF, ELSE, FOR EACH
 
-Przykład:
-Tytuł: Dodanie książki
-Aktorzy:  Bibliotekarz
-Aktor systemowy: System
+Przykład: <br />
+Tytuł: Dodanie książki <br />
+Aktorzy:  Bibliotekarz <br />
+Aktor systemowy: System <br />
 
-• Bibliotekarz wybiera opcje dodania nowej pozycji książkowej
-• Wyświetla się formularz.
-• Bibliotekarz podaje dane książki.
-• IF: Bibliotekarz pragnie dodać egzemplarze książki
-    o Bibliotekarz wybiera opcję definiowania egzemplarzy
-    o System prezentuje zdefiniowane egzemplarze
-    o FOR EACH egzemplarz:
-        • Bibliotekarz wybiera opcję dodania egzemplarza
-        • System prosi o podanie danych egzemplarza
-        • Bibliotekarz podaje dane egzemplarza i zatwierdza.
-        • System informuje o poprawnym dodaniu egzemplarza i prezentuje zaktualizowaną listę egzemplarzy.
-• Bibliotekarz zatwierdza dodanie książki.
-• System informuje o poprawnym dodaniu książki.
+* Bibliotekarz wybiera opcje dodania nowej pozycji książkowej
+* Wyświetla się formularz.
+* Bibliotekarz podaje dane książki.
+* IF: Bibliotekarz pragnie dodać egzemplarze książki
+    * Bibliotekarz wybiera opcję definiowania egzemplarzy
+    * System prezentuje zdefiniowane egzemplarze
+    * FOR EACH egzemplarz:
+        * Bibliotekarz wybiera opcję dodania egzemplarza 
+        * System prosi o podanie danych egzemplarza
+        * Bibliotekarz podaje dane egzemplarza i zatwierdza.
+        * System informuje o poprawnym dodaniu egzemplarza i prezentuje zaktualizowaną listę egzemplarzy.
+* Bibliotekarz zatwierdza dodanie książki.
+* System informuje o poprawnym dodaniu książki.
