@@ -7,6 +7,10 @@ import pl.put.poznan.sqc.Wizytator;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Numeruje kroki scenariuszy i podscenariuszy
+ */
+
 public class PonumerujKroki implements Wizytator {
     private List<String> wynik = new ArrayList<>();
     private List<Integer> indeksy = new ArrayList<>();
@@ -14,6 +18,10 @@ public class PonumerujKroki implements Wizytator {
     private String aktorSystemowy;
     private String tytul;
 
+    /**
+     * inicjuje klase, dodaje do wyniku naglowek scenariusza (tytul oraz aktorow)
+     * @param scenariusz scenariusz, ktorego kroki maja zostac ponumerowane
+     */
     public PonumerujKroki(Scenariusz scenariusz){
         wynik = new ArrayList<>();
         indeksy = new ArrayList<>();
@@ -21,7 +29,7 @@ public class PonumerujKroki implements Wizytator {
         aktorzy=scenariusz.getAktorzy();
         aktorSystemowy=scenariusz.getAktorSystemowy();
         tytul=scenariusz.getTytul();
-        wynik.add("Tytuł: "+tytul);
+        wynik.add("Tytul: "+tytul);
         String pom="Aktorzy:";
         for(String aktor : aktorzy){
             if(pom.contains(": "))
@@ -35,6 +43,10 @@ public class PonumerujKroki implements Wizytator {
         wynik.add("Aktor systemowy: "+aktorSystemowy);
     }
 
+    /**
+     *Dodaje dany krok do ponumerowanego scenariusza z jego obecnym indeksem w momencie wywolania procedury, oraz wywoluje sie dla wszystkich krokow podscenariusza, jezeli taki istnieje.
+     * @param krok Krok scenariusza
+     */
     @Override
     public void odwiedz(Krok krok) {
         indeksy.set(indeksy.size()-1,indeksy.get(indeksy.size()-1)+1);
@@ -54,6 +66,10 @@ public class PonumerujKroki implements Wizytator {
 
     }
 
+    /**
+     *Zwraca ponumerowany scenariusz
+     * @return Scenariusz w formie listy typu string
+     */
     public List<String> getWynik() {
         return wynik;
     }
