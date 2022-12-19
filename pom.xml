@@ -69,7 +69,7 @@
 			<artifactId>maven-javadoc-plugin</artifactId>
 			<version>3.4.1</version>
 			<configuration>
-			  <outputDirectory>/javadoc</outputDirectory>
+			  <outputDirectory>${basedir}/javadoc</outputDirectory>
 			  <show>public</show>
 			</configuration>
       		      </plugin>
