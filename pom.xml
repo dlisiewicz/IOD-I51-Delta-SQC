@@ -14,16 +14,6 @@
         <java.version>11</java.version>
     </properties>
 
-    
-    <dependencies>
-        <dependency>
-            <groupId>com.jayway.jsonpath</groupId>
-            <artifactId>json-path</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
-
 	<reporting>
 	  <plugins>
 			<plugin>
