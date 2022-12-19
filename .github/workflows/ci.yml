@@ -16,7 +16,5 @@ jobs:
           cache: maven
       - name: Validate, build and run tests
         run: mvn --batch-mode --update-snapshots verify
-      - run: mvn dependency:go-offline site
-      - run: mvn --offline site
-      - run: mvn site
+      - run: mvn javadoc:javadoc
 
