@@ -57,7 +57,7 @@ public class Main {
         }
         System.out.println("");
 
-        PonumerujKroki ponumerujKroki=new PonumerujKroki(scenariusz);
+        PonumerujKroki ponumerujKroki=new PonumerujKroki(scenariusz.getAktorzy(), scenariusz.getAktorSystemowy(), scenariusz.getTytul());
         scenariusz.akceptuj(ponumerujKroki);
         wynik = ponumerujKroki.getWynik();
         System.out.println("Scenariusz z ponumerowana lista krokow:" + "\n");

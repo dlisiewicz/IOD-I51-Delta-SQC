@@ -19,16 +19,18 @@ public class PonumerujKroki implements Wizytator {
     private String tytul;
 
     /**
-     * inicjuje klase, dodaje do wyniku naglowek scenariusza (tytul oraz aktorow)
-     * @param scenariusz scenariusz, ktorego kroki maja zostac ponumerowane
+     * Inicjuje klase, dodaje do wyniku naglowek scenariusza (tytul oraz aktorow)
+     * @param aktorzy Aktorzy zewnetrzni scenariusza
+     * @param aktorSystemowy Aktor systemowy scenariusza
+     * @param tytul Tytul scenariusza
      */
-    public PonumerujKroki(Scenariusz scenariusz){
+    public PonumerujKroki(List<String> aktorzy, String aktorSystemowy, String tytul){
         wynik = new ArrayList<>();
         indeksy = new ArrayList<>();
         indeksy.add(0);
-        aktorzy=scenariusz.getAktorzy();
-        aktorSystemowy=scenariusz.getAktorSystemowy();
-        tytul=scenariusz.getTytul();
+        this.aktorzy=aktorzy;
+        this.aktorSystemowy=aktorSystemowy;
+        this.tytul=tytul;
         wynik.add("Tytul: "+tytul);
         String pom="Aktorzy:";
         for(String aktor : aktorzy){
