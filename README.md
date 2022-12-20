@@ -25,3 +25,14 @@ Aktor systemowy: System <br />
         * System informuje o poprawnym dodaniu egzemplarza i prezentuje zaktualizowaną listę egzemplarzy.
 * Bibliotekarz zatwierdza dodanie książki.
 * System informuje o poprawnym dodaniu książki.
+
+# Budowanie z wykorzystaniem Maven'a
+## Automatyczne budowanie (kompilacja, stworzenie paczki do dystrybucji - . jar)
+`mvn --batch-mode --update-snapshots verify` <br>
+<br>
+paczka .jar generuje się w \target 
+## Generowanie javadoc
+`mvn javadoc:javadoc` <br>
+<br>
+javadoc generuje się w \target\site\apidocs
+
