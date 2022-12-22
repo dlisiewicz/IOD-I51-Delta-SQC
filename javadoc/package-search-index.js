@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"pl.put.poznan.sqc"},{"l":"pl.put.poznan.sqc.bezAktora"},{"l":"pl.put.poznan.sqc.licznikDecyzyjnych"},{"l":"pl.put.poznan.sqc.licznikKrokow"},{"l":"pl.put.poznan.sqc.ponumerujKroki"}];updateSearchResults();
