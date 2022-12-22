@@ -31,7 +31,7 @@ Aktor systemowy: System <br />
 `mvn --batch-mode --update-snapshots verify` <br>
 <br>
 paczka .jar generuje się w \target 
-## Generowanie javadoc
+## Generowanie javadoc 12
 `mvn javadoc:javadoc` <br>
 <br>
 javadoc generuje się w \target\site\apidocs
