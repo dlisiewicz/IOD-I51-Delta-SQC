@@ -20,6 +20,15 @@ public class Krok {
     }
 
     /**
+     * Dodaje krok do listy podkroków na pozycji i
+     * @param i index
+     * @param krok krok
+     */
+    public void dodajPodKrok(int i, Krok krok){
+        podKrok.add(i,krok);
+    }
+
+    /**
      *Zwraca tresc kroku
      * @return Tresc
      */
