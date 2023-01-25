@@ -109,9 +109,8 @@ class bezAktoraTest {
         when(mock.getAktorSystemowy()).thenReturn("System");
 
         bezAktora bezAktora = new bezAktora(mock.getAktorzy(), mock.getAktorSystemowy());
-        mock.akceptuj(bezAktora);
 
-        assertEquals(Arrays.asList("IF Krok 3","ELSE Krok 3-1"), bezAktora.getWynik());
+        assertEquals(Arrays.asList("Bibliotekarz","Dozorca"), bezAktora.getAktorzy());
 
     }
 

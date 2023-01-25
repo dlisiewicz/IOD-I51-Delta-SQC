@@ -50,6 +50,13 @@ public class bezAktora implements Wizytator {
             }
         }
     }
+    /**
+     *Zwwraca liste aktorów
+     * @return Lista aktrów w formacie string
+     */
+    public List<String> getAktorzy() {
+        return aktorzy;
+    }
 
     /**
      *Zwwraca liste krokow, ktore nie zaczynaja sie od wykonania czynnosci przez aktora

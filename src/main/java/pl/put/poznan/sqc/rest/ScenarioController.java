@@ -18,11 +18,11 @@ public class ScenarioController {
     Scenariusz scenariusz;
 
     @RequestMapping(value = "/initiate",method = RequestMethod.GET, produces = "application/json")
-    public void post(@RequestParam(value = "tytul") String tytul,
-                     @RequestParam(value = "aktorzy") List<String> aktorzy,
-                     @RequestParam(value = "systemowy") String systemowy,
-                     @RequestParam(value = "kroki_pom") List<Integer> kroki_pom,
-                     @RequestParam(value = "kroki") List<String> kroki){
+        public void post(@RequestParam(value = "tytul") String tytul,
+                @RequestParam(value = "aktorzy") List<String> aktorzy,
+                @RequestParam(value = "systemowy") String systemowy,
+                @RequestParam(value = "kroki_pom") List<Integer> kroki_pom,
+                @RequestParam(value = "kroki") List<String> kroki){
 
         // log the parameters
         System.out.println(tytul);
